@@ -1,0 +1,34 @@
+#Author: Reiyan R.M.
+#Date : 13/03/2024
+
+print("Task 01 | Alpha Code | Python Programming")
+print("FIBONACCI GENRATOR")
+
+fn=1 #defining last element in list (initial)
+fm=0 #def last - 1 elment in list (initial)
+
+y=int(input("How many intigers Fibonacci Sequence needed : ")) #asking the users to enter the length of Fibonacci Sequence number
+
+list=[] #def list
+
+if y>0: #Condition
+    list=[0,1]  #initialo list
+    while y>=2:
+        f=fm+fn  #adding last two numbers in list
+        list.append(f) #adding that number in to list
+        fm=fn # old last element in list become as last - 1 element in new list
+        fn=f #new last element 
+        y=y-1 #loop
+
+    print(list)
+
+
+elif y==0:
+    list[0] #initial list
+    print (list)
+
+else :
+    print("Invalid Selection") #error
+
+
+
